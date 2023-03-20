@@ -1,19 +1,21 @@
 #include <stdio.h>
+#include <ctype.h>
+
 /**
  * Main - entry point
  *
  * Description: Print lowercase alphabet
- * Return: Always 0
+ * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	int n = 97;
+	int lowerCase = 'a';
 
-	while (n <= 122)
+	while (lowerCase <= 'z')
 	{
-	putchar(n);
-	n++;
+	putchar(lowercase);
+	lowercase++;
 	}
 	putchar('\n');
 	return (0);
