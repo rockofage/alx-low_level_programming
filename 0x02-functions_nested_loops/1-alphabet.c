@@ -2,8 +2,7 @@
 
 /**
  * print_alphabet - Print lowercase alphabets
- * 
- * Descrip
+ *
  * Return: nothing
  */
 
