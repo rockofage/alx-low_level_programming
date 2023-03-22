@@ -39,4 +39,5 @@ void sum_natural(void)
 		_putchar((final_answer_reverse % 10) + '0');
 		final_answer_reverse = final_answer_reverse / 10;
 	}
+	_putchar('\n');
 }
