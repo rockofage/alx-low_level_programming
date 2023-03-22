@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - print all seconds of the day 
+ * jack_bauer - print all seconds of the day
  *
  * Return: void
  */
