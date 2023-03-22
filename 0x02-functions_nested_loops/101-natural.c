@@ -7,8 +7,8 @@
  */
 void sum_natural(void)
 {
-	int mul_3, mul_5, mul_15, sum_3, sum_5, sum_15;
-	mul_3 = mul_5 = mul_15 = sum_3 = sum_5 = sum_15 = 0;
+	int mul_3, mul_5, mul_15, sum_3, sum_5, sum_15, final_answer, final_answer_reverse;
+	mul_3 = mul_5 = mul_15 = sum_3 = sum_5 = sum_15 = final_answer = final_answer_reverse = 0;
 
 	while (mul_3 < 1024)
 	{
