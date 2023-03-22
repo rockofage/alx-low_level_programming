@@ -25,13 +25,17 @@ void print_times_table(int n)
 					_putchar(',');
 					_putchar(' ');
 				}
-				if (p == 0)
+				if (j == 0)
+				{
+					_putchar(p + '0');
+				}
+				if (p == 0 && j != 0)
 				{
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(p + '0');
 				}
-				else
+				else if(j != 0)
 				{
 					while ((p / di) == 0)
 					{
