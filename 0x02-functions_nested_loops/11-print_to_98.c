@@ -65,10 +65,16 @@ void print_to_98(int n)
 		        {
 		                _putchar(abs(n) + '0');
 		        }
-		        else
+			else if (abs(n) < 100)
 		        {
 		                _putchar((abs(n) / 10) + '0');
 		                _putchar((abs(n) % 10) + '0');
+			}
+			else if (abs(n) < 1000)
+			{
+				_putchar((abs(n) / 100) + '0');
+				_putchar(((abs(n) / 10) % 10) + '0');
+				_putchar((abs(n) % 10) + '0');
 			}
 			n++;
 		}
