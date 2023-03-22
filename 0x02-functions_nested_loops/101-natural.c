@@ -26,8 +26,8 @@ void sum_natural(void)
 		mul_15 += 15;
 	}
 
-	int final_answer = sum_3 + sum_5 - sum_15;
-	int final_answer_reverse = 0;
+	final_answer = sum_3 + sum_5 - sum_15;
+	final_answer_reverse = 0;
 	
 	while (final_answer / 10 != 0 || final_answer % 10 != 0)
 	{
