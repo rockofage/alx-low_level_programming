@@ -25,21 +25,27 @@ void print_times_table(int n)
 					_putchar(',');
 					_putchar(' ');
 				}
-				while ((p / di) == 0)
+				if (p == 0)
 				{
-					_putchar(' ');
-					di /= 10;
+					_putchar(p + '0');
 				}
-
-				while (di >= 1)
+				else
 				{
-					_putchar((p / di) + '0');
-					p = p % di;
-					di /= 10;
+					while ((p / di) == 0)
+					{
+						_putchar(' ');
+						di = di / 10;
+					}
+					while (di >= 1)
+					{
+						_putchar((p / di) + '0');
+						p = p % di;
+						di /= 10;
+					}
 				}
-				_putchar('\n');
 				j++;
 			}
+			_putchar('\n');
 			i++;
 		}
 	}
