@@ -11,10 +11,10 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	printf("%llu", a);
+	printf("%lu", a);
 	while (i < 97)
 	{
-		printf(", %llu", b);
+		printf(", %lu", b);
 		next = a + b;
 		a = b;
 		b = next;
