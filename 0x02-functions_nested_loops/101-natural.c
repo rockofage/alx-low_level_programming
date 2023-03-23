@@ -18,4 +18,5 @@ int main(void)
 		i++;
 	}
 	printf("%d\n", ans);
+	return (0);
 }
