@@ -1,34 +1,24 @@
 #include "main.h"
 
-/*
+/**
  * sum_natural - sums all the multiples of 3 and 5 below 1024
  *
  * Return: void
  */
 void sum_natural(void)
 {
-	int mul_3, mul_5, mul_15, sum_3, sum_5, sum_15, final_answer, final_answer_reverse;
-	mul_3 = mul_5 = mul_15 = sum_3 = sum_5 = sum_15 = final_answer = final_answer_reverse = 0;
+	int final_answer, final_answer_reverse, i;
 
-	while (mul_3 < 1024)
-	{
-		sum_3 += mul_3;
-		mul_3 += 3;
-	}
-	while (mul_5 < 1024)
-	{
-		sum_5 += mul_5;
-		mul_5 += 5;
-	}
-	while (mul_15 < 1024)
-	{
-		sum_15 += mul_15;
-		mul_15 += 15;
-	}
+	final_answer, final_answer_reverse, i = 0;
 
-	final_answer = sum_3 + sum_5 - sum_15;
-	final_answer_reverse = 0;
-	
+	while (i < 1024)
+	{
+		if (i % 5 == 0 || i % 3 == 0)
+		{
+			final_answer += i;
+		}
+		i++;
+	}
 	while (final_answer / 10 != 0 || final_answer % 10 != 0)
 	{
 		final_answer_reverse = (final_answer_reverse * 10) + (final_answer % 10);
