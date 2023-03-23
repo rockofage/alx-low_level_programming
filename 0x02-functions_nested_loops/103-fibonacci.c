@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	int i, a, b, next;
+	int a, b, next;
 	long int sum;
 
-	i = sum = 0;
+	sum = 0;
 	a = 1;
 	b = 2;
 	while (b < 4000000)
