@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * puts2 -function should print only one character out of the two
+ * puts2 - function should print only one character out of the two
  * starting with the first one
- * @str: input
- * Return: print
+ * @str: input string
+ * Return: void
  */
 void puts2(char *str)
 {
 	int i = 0;
 
-	do
+	while (str[i] != 0)
 	{
-		putchar(str[i]);
-		i += 2;
+		if (i % 2 == 0)
+			putchar(str[i]);
+		i++;
 	}
-	while (str[i] != '\0' && str[i-1] != '\0');
 	putchar('\n');
 }
