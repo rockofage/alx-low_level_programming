@@ -9,7 +9,7 @@
 char *leet(char *s)
 {
 	int i, j;
-gchar *ori, *new;
+	char *ori, *new;
 
 	ori = "aAeEoOtTlL";
 	new = "4433007711";
