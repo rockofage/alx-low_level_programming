@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_number - prints an integer
@@ -9,31 +8,8 @@
  */
 void print_number(int n)
 {
-	/*int rev = 0;
-
-	if (n < 0)
-	{
-		_putchar('-');
-		n *= -1;
-	}
-	else if (n == 0)
-		_putchar('0');
-	if (n > 0)
-	{
-		while (n / 10 > 0 || n % 10 > 0)
-		{
-			rev = rev * 10 + n % 10;
-			n = n / 10;
-		}
-		while (rev / 10 > 0 || rev % 10 > 0)
-		{
-			_putchar(rev % 10 + '0');
-			rev = rev / 10;
-		}
-	}
-	*/
-
-	int counter, nc, i, div;
+	int counter, i, div;
+	unsigned int nc;
 
 	div = 1;
 	counter = 0;
