@@ -4,6 +4,7 @@
 /**
  * print_diagsums - sums the figures in the diag of a sq. matrix
  * @a: square matrix
+ * @size: size of matrix
  *
  * Return: void
  */
