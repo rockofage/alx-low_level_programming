@@ -13,11 +13,11 @@ void print_diagsums(int *a, int size)
 	unsigned long int sum1, sum2;
 
 	sum1 = a[0];
-	sum2 = a[size -1];
+	sum2 = a[size - 1];
 	for (i = 1; i < size; i++)
 	{
 		sum1 += a[size * i + i];
-		sum2 += a[size * (i + 1) - (i +1)];
+		sum2 += a[size * (i + 1) - (i + 1)];
 	}
 	printf("%lu, %lu\n", sum1, sum2);
 }
