@@ -2,8 +2,8 @@
 
 /**
  * set_string - name implies
- * @s - double pointer
- * @to - string
+ * @s: double pointer
+ * @to: string
  *
  * Return: void
  */
