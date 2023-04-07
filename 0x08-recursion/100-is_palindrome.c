@@ -31,7 +31,7 @@ int proper_palindrome(char *s, int i, int last)
 		return (1);
 	if (s[i] != s[last])
 		return (0);
-	return (proper_palindrome(s, i + 1, last -1));
+	return (proper_palindrome(s, i + 1, last - 1));
 }
 /**
  * _strlen_recursion - calculates length of string
